@@ -1,0 +1,71 @@
+body {
+    background-image: url("pictures/hero_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    height: 919px;
+}
+
+.header {
+    display: flex;
+    height: 150px;
+    align-items: center;
+    background-color: #CBC1B1;
+}
+
+.header img {
+    margin-left: 150px;
+}
+
+
+.navbar  {
+    display: flex;
+    position: absolute;
+    right: 165px;
+    font-weight: bold;
+}
+
+.navbar button {
+    height: 55px;
+    background-color: #CBC1B1;
+    border-color: transparent;
+    font-size: 18px;
+}
+
+.navbar button:hover {
+    background-color: #7C7474;
+    cursor: pointer;
+}
+
+.box {
+    position: absolute;
+    height: 370px; 
+    width: 650px; 
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgba(108, 122, 137, 0.3);
+}
+
+.box p {
+    margin: 30px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.box button{
+    height: 55px;
+    width: 170px;
+    color: white;
+    background-color: #7C7474;
+    border-color: transparent;
+}
+
+.box button:hover {
+    background-color: #313131;
+}
