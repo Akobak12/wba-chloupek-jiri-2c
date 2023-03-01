@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: sans-serif;
+    background-color: #F8F7EC;
 }
 
 .header {
@@ -9,8 +11,12 @@ body {
     background-color: #CBC1B1;
 }
 
-.header img {
+.logo {
     margin-left: 150px;
+}
+
+.menu {
+    display: none;
 }
 
 .navbar  {
@@ -32,6 +38,30 @@ body {
     cursor: pointer;
 }
 
+.main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    margin: 200px 0 200px 0;
+    width: 100%;
+} 
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 0 25px 100px 25px;
+}
+
+.container img {
+    margin-right: 50px;
+}
+
+.container:hover {
+    background-color: #D1D1D1;
+    cursor: pointer;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -50,4 +80,55 @@ body {
 .footer button:hover {
     background-color: #7C7474;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 391px) {
+    .header {
+        height: 80px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 80px;
+        margin-left: 40px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        right: 40px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .main {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, 50px);
+        grid-gap: 30px;
+        margin: 69px 0 69px 0;
+    }
+
+    .container {
+        height: 50px;
+    }
+
+    .container img {
+        height: 50px;
+        width: 50px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .footer {
+        height: 88px;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
 }

@@ -9,12 +9,30 @@
 </head>
 <body>
     <div class="header">
-        <img src="pictures/logo.png" alt="">
+        <img src="pictures/logo.png" class="logo">
+        <img src="pictures/menu.png" class="menu">
         <div class="navbar">
-            <button>DOVOLENÁ</button>
-            <button>PRAKTICKÉ INFORMACE</button>
-            <button>KONTAKT</button>
+            <a href="index.html">
+                <button>DOVOLENÁ</button>
+            </a>
+            <a href="information.html">
+                <button>PRAKTICKÉ INFORMACE</button>                
+            </a>
+            <a href="contact.html">
+                <button>KONTAKT</button>                
+            </a>
         </div>
+    </div>
+    <div class="main">
+        <h1>KONTAKT</h1>
+        <form class="form">
+            <input type="text" placeholder="Jméno">
+            <input type="text" placeholder="Příjmení">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Telefon">
+            <textarea placeholder="Vaše zpráva" class="message"></textarea>
+        </form>
+        <button class="submit">ODESLAT</button>
     </div>
     <div class="footer">
         <button>OBCHODNÍ PODMÍNKY</button>

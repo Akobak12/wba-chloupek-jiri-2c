@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: sans-serif;
+    background-color: #F8F7EC;
 }
 
 .main {
@@ -17,10 +18,13 @@ body {
     background-color: #CBC1B1;
 }
 
-.header img {
+.logo {
     margin-left: 150px;
 }
 
+.menu {
+    display: none;
+}
 
 .navbar  {
     display: flex;
@@ -97,8 +101,8 @@ body {
     letter-spacing: 0.1em;
 }
 
-.locations div {
-    margin: 25px;
+.locations>div {
+    margin: 15px 20px 0 20px;
 }
 
 .locations h3 {
@@ -109,7 +113,6 @@ body {
     text-align: left;
     font-size: 18px ;
     width: 350px;
-    color: #7C7474;
 }
 
 .footer {
@@ -131,4 +134,114 @@ body {
 .footer button:hover {
     background-color: #7C7474;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 391px) {
+    .header {
+        height: 80px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 80px;
+        margin-left: 40px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        right: 40px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        height: auto;
+        background-image: none;
+    }
+
+    .box {
+        position: static;
+        margin-top: 50px;
+        height: 200px;
+        width: 310px;
+        background-color: #7C7474;
+    }
+
+    .box h1 {
+        font-size: 20px;
+    }
+
+    .box p {
+        margin: 10px;
+        font-size: 13px;    
+    }
+
+    .box button{
+        height: 25px;
+        width: 120px;
+        margin-top: 20px;
+        background-color: #a19b98;
+        color: black;
+        box-shadow: 0px 5px 7px 4px rgba(0,0,0,0.3);
+    }
+
+    .bottom_section {
+        margin: 20px;
+    }
+
+    .bottom_section h1 {
+        font-size: 11px;
+    }
+
+    .locations {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        margin-left: 15px;
+    }
+
+    .atlantic {
+        display: flex;
+    }
+
+    .west {
+        display: flex;
+    }
+
+    .east {
+        display: flex;
+    }
+
+    .locations img {
+        height: 115px;
+        width: 115px;
+    }
+
+    .locations h3 {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .locations p {
+        width: auto;
+        font-size: 10px;
+    }
+
+    .bottom_section button {
+        height: 25px;
+        width: 120px;
+        margin-top: 25px;
+    }
+
+    .footer {
+        height: 88px;
+    }
 }

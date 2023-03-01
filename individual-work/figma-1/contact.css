@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: sans-serif;
+    background-color: #F8F7EC;
 }
 
 .header {
@@ -9,7 +11,7 @@ body {
     background-color: #CBC1B1;
 }
 
-.header img {
+.logo {
     margin-left: 150px;
 }
 
@@ -32,6 +34,54 @@ body {
     cursor: pointer;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 380px 380px;
+    grid-template-rows: 40px 40px 233px;
+    grid-gap: 20px;
+}
+
+.form input {
+    background-color: lightgray;
+    border-color: transparent;
+    padding: 15px;
+}
+
+.message {  
+    grid-column: 1/3;
+    min-height: 0;
+    min-width: 0;
+    padding: 15px;
+    resize: none;
+    background-color: lightgray;
+    border-color: transparent;
+}
+
+::placeholder {
+    color: black;
+    text-align: top;
+}
+
+.submit {
+    margin: 50px 0 150px 0;
+    height: 48px;
+    width: 180px;
+    background-color: grey;
+    color: white;
+    border-color: transparent;
+}
+
+.submit:hover {
+    background-color: #313131;    
+    cursor: pointer;
+}
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -39,6 +89,7 @@ body {
     align-items: center;
     height: 150px;
     font-size: 12px;
+    bottom: 0;
     background-color: #CBC1B1;
 }
 
@@ -50,4 +101,55 @@ body {
 .footer button:hover {
     background-color: #7C7474;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 391px) {
+    .header {
+        height: 80px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 80px;
+        margin-left: 40px;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        right: 40px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .form {
+        grid-template-columns: 310px;
+        grid-template-rows: repeat(4, 30px) 144px;
+    }
+
+    input {
+        grid-column: 1/3;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 69px 0 38px 0;
+
+    }
+
+    .submit {
+        height: 25px;
+        width: 120px;
+        margin: 38px 0 69px 0;
+    }
+
+    .footer {
+        height: 88px;
+        width: 100vw;
+        position: absolute;
+    }
 }
